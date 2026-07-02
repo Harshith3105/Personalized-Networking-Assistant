@@ -1,0 +1,91 @@
+[
+    {
+        "id": "561e9634-dffb-4ecf-8126-81fd6976f4a6",
+        "timestamp": "2026-07-02T12:21:46.914993",
+        "event_description": "AI for Sustainable Cities. Using machine learning to optimize public transit networks and reduce emissions.",
+        "interests": [
+            "climate change",
+            "urban planning"
+        ],
+        "themes": [
+            "Networking",
+            "Sustainability"
+        ],
+        "starters": [
+            {
+                "id": "6294bf3f-fc0c-4684-86cc-5a782be4b799",
+                "text": "Is there any real-world application for AI that can help reduce greenhouse gas emissions?",
+                "feedback": "up"
+            },
+            {
+                "id": "18d531c3-f1cf-470e-abbb-553b5583b037",
+                "text": "I'm interested in AI for sustainable cities. What is the most important part of a city's infrastructure, such as public transportation?",
+                "feedback": null
+            },
+            {
+                "id": "14be87b3-e7d1-4c2d-a7f3-a9d65e6d9d31",
+                "text": "I'm interested in AI for sustainable cities. What is the most important part of a city's public transportation? Do you think that a city can be built to accommodate a growing number of users, or do you think it can be built to be more sustainable?",
+                "feedback": null
+            }
+        ]
+    },
+    {
+        "id": "e23e7c27-82fa-42a5-a14f-e9af9eac6f7d",
+        "timestamp": "2026-07-02T12:24:57.344723",
+        "event_description": "AI for Sustainable Cities. Using machine learning to optimize public transit networks and reduce emissions.",
+        "interests": [
+            "climate change",
+            "urban planning"
+        ],
+        "themes": [
+            "Networking",
+            "Sustainability"
+        ],
+        "starters": [
+            {
+                "id": "1f2b07dd-eaf4-4f44-baed-830f8040a08e",
+                "text": "I'm curious: how do you see robots working in the real world, or what would the future hold for AI and robotics?",
+                "feedback": "up"
+            },
+            {
+                "id": "760c1181-06d7-41e6-b251-0a9ff6e2a616",
+                "text": "I'm interested in fintech. What blockchain architectures do you find most promising for high-volume transactions?",
+                "feedback": null
+            },
+            {
+                "id": "b6499347-9686-405a-a01f-003d828f1f9f",
+                "text": "Do you think regulators will eventually stabilize cryptocurrency markets, or will DeFi remain largely independent?",
+                "feedback": null
+            }
+        ]
+    },
+    {
+        "id": "9f2e94ef-18e8-41b2-ade5-0d3cc3ba7fff",
+        "timestamp": "2026-07-02T13:15:44.050126",
+        "event_description": "AI for Sustainable Cities",
+        "interests": [
+            "climate change",
+            "urban planning"
+        ],
+        "themes": [
+            "Sustainability"
+        ],
+        "starters": [
+            {
+                "id": "13d078e3-8638-4f17-99ba-879ebafee9dd",
+                "text": "I'm curious: how are you looking at AI for sustainable cities?",
+                "feedback": null
+            },
+            {
+                "id": "bdd5ebd4-fdb0-41a2-b533-357622525040",
+                "text": "I'm interested in fintech. What blockchain architectures do you find most promising for high-volume transactions?",
+                "feedback": null
+            },
+            {
+                "id": "f8692c42-09bb-4b7b-94f3-5215aea54c2c",
+                "text": "Do you think regulators will eventually stabilize cryptocurrency markets, or will DeFi remain largely independent?",
+                "feedback": null
+            }
+        ]
+    }
+]
