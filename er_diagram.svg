@@ -1,0 +1,332 @@
+<svg width="1210" height="740" viewBox="0 0 1210 740" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Fonts -->
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+      text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      .title-text {
+        font-size: 20px;
+        font-weight: 700;
+        fill: #F8FAFC;
+        letter-spacing: 1px;
+      }
+      .card {
+        fill: #1E293B;
+        stroke: #334155;
+        stroke-width: 1.5;
+      }
+      .card-header {
+        fill: url(#header-grad);
+      }
+      .card-title {
+        font-size: 13px;
+        font-weight: 700;
+        fill: #FFFFFF;
+        letter-spacing: 0.5px;
+      }
+      .card-subtitle {
+        font-size: 10px;
+        font-weight: 500;
+        fill: #38BDF8;
+      }
+      .field-text {
+        font-size: 12px;
+        font-weight: 500;
+        fill: #E2E8F0;
+      }
+      .field-type {
+        font-size: 10px;
+        fill: #64748B;
+        font-family: monospace;
+      }
+      .info-title {
+        font-size: 12px;
+        font-weight: 700;
+        fill: #38BDF8;
+        letter-spacing: 0.5px;
+      }
+      .info-text {
+        font-size: 11px;
+        fill: #94A3B8;
+        line-height: 1.4;
+      }
+      .relation-line {
+        stroke: #38BDF8;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+      .relation-label {
+        font-size: 10px;
+        fill: #64748B;
+        font-weight: 600;
+      }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+
+    <linearGradient id="header-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+
+    <linearGradient id="footer-box-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#020617" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="line-glow" x="-10%" y="-10%" width="120%" height="120%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Relationship Markers -->
+    <!-- 'One' Cardinality Marker (double perpendicular ticks or single tick) -->
+    <marker id="one-start" markerWidth="20" markerHeight="20" refX="15" refY="10" orient="auto" markerUnits="strokeWidth">
+      <!-- Vertical line representing 'One' -->
+      <path d="M 12,5 L 12,15 M 8,5 L 8,15" stroke="#38BDF8" stroke-width="1.5" />
+    </marker>
+
+    <marker id="one-end" markerWidth="20" markerHeight="20" refX="5" refY="10" orient="auto" markerUnits="strokeWidth">
+      <!-- Vertical line representing 'One' -->
+      <path d="M 8,5 L 8,15 M 12,5 L 12,15" stroke="#38BDF8" stroke-width="1.5" />
+    </marker>
+
+    <!-- 'Many' Cardinality Marker (Crow's Foot) -->
+    <marker id="many-end" markerWidth="20" markerHeight="20" refX="15" refY="10" orient="auto" markerUnits="strokeWidth">
+      <!-- Crow's foot fork and single inner tick -->
+      <path d="M 15,10 L 5,5 M 15,10 L 5,15 M 15,5 L 15,15" stroke="#38BDF8" stroke-width="1.5" fill="none" />
+    </marker>
+
+    <marker id="many-start" markerWidth="20" markerHeight="20" refX="5" refY="10" orient="auto" markerUnits="strokeWidth">
+      <!-- Crow's foot fork and single inner tick -->
+      <path d="M 5,10 L 15,5 M 5,10 L 15,15 M 5,5 L 5,15" stroke="#38BDF8" stroke-width="1.5" fill="none" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1210" height="740" fill="url(#bg-grad)" />
+
+  <!-- Subtle grid pattern overlay -->
+  <g opacity="0.05">
+    <path d="M 0,50 L 1210,50 M 0,100 L 1210,100 M 0,150 L 1210,150 M 0,200 L 1210,200 M 0,250 L 1210,250 M 0,300 L 1210,300 M 0,350 L 1210,350 M 0,400 L 1210,400 M 0,450 L 1210,450 M 0,500 L 1210,500 M 0,550 L 1210,550 M 0,600 L 1210,600 M 0,650 L 1210,650 M 0,700 L 1210,700" stroke="#38BDF8" stroke-width="1" />
+    <path d="M 100,0 L 100,740 M 200,0 L 200,740 M 300,0 L 300,740 M 400,0 L 400,740 M 500,0 L 500,740 M 600,0 L 600,740 M 700,0 L 700,740 M 800,0 L 800,740 M 900,0 L 900,740 M 1000,0 L 1000,740 M 1100,0 L 1100,740 M 1200,0 L 1200,740" stroke="#38BDF8" stroke-width="1" />
+  </g>
+
+  <!-- Title -->
+  <g transform="translate(605, 50)">
+    <text text-anchor="middle" class="title-text">ER DIAGRAM - PERSONALIZED NETWORKING ASSISTANT</text>
+    <path d="M -260,12 L 260,12" stroke="#38BDF8" stroke-width="2" opacity="0.8" />
+  </g>
+
+  <!-- ==================== ENTITY CARDS ==================== -->
+
+  <!-- 1. USER_PROFILE (Top Left) -->
+  <g transform="translate(100, 120)" filter="url(#card-shadow)">
+    <rect width="270" height="140" class="card" rx="8" />
+    <!-- Header -->
+    <path d="M 1.5,8 A 6.5,6.5 0 0 1 8,1.5 L 262,1.5 A 6.5,6.5 0 0 1 268.5,8 L 268.5,45 L 1.5,45 Z" fill="url(#header-grad)" />
+    <text x="15" y="24" class="card-title">USER_PROFILE</text>
+    <text x="15" y="38" class="card-subtitle">Primary User Entity</text>
+    <!-- Separator -->
+    <line x1="0" y1="45" x2="270" y2="45" stroke="#334155" stroke-width="1.5" />
+    <!-- Fields -->
+    <text x="15" y="68" class="field-text">🔑 UserID</text>
+    <text x="210" y="68" class="field-type">VARCHAR (PK)</text>
+    
+    <text x="15" y="93" class="field-text">📄 BioText</text>
+    <text x="210" y="93" class="field-type">TEXT</text>
+    
+    <text x="15" y="118" class="field-text">💾 currentEventCache</text>
+    <text x="210" y="118" class="field-type">JSON</text>
+  </g>
+
+  <!-- 2. EVENT_CONTEXT (Top Middle) -->
+  <g transform="translate(470, 120)" filter="url(#card-shadow)">
+    <rect width="270" height="140" class="card" rx="8" />
+    <!-- Header -->
+    <path d="M 1.5,8 A 6.5,6.5 0 0 1 8,1.5 L 262,1.5 A 6.5,6.5 0 0 1 268.5,8 L 268.5,45 L 1.5,45 Z" fill="url(#header-grad)" />
+    <text x="15" y="24" class="card-title">EVENT_CONTEXT</text>
+    <text x="15" y="38" class="card-subtitle">The Core Event Data</text>
+    <!-- Separator -->
+    <line x1="0" y1="45" x2="270" y2="45" stroke="#334155" stroke-width="1.5" />
+    <!-- Fields -->
+    <text x="15" y="68" class="field-text">🔑 EventID</text>
+    <text x="210" y="68" class="field-type">VARCHAR (PK)</text>
+    
+    <text x="15" y="93" class="field-text">📝 EventDescription</text>
+    <text x="210" y="93" class="field-type">TEXT</text>
+    
+    <text x="15" y="118" class="field-text">🏷️ AnalyzedThemes</text>
+    <text x="210" y="118" class="field-type">TEXT</text>
+  </g>
+
+  <!-- 3. GENERATED_STARTER (Top Right) -->
+  <g transform="translate(840, 120)" filter="url(#card-shadow)">
+    <rect width="270" height="160" class="card" rx="8" />
+    <!-- Header -->
+    <path d="M 1.5,8 A 6.5,6.5 0 0 1 8,1.5 L 262,1.5 A 6.5,6.5 0 0 1 268.5,8 L 268.5,45 L 1.5,45 Z" fill="url(#header-grad)" />
+    <text x="15" y="24" class="card-title">GENERATED_STARTER</text>
+    <text x="15" y="38" class="card-subtitle">The Resulting Chat Prompts</text>
+    <!-- Separator -->
+    <line x1="0" y1="45" x2="270" y2="45" stroke="#334155" stroke-width="1.5" />
+    <!-- Fields -->
+    <text x="15" y="68" class="field-text">🔑 StarterID</text>
+    <text x="210" y="68" class="field-type">VARCHAR (PK)</text>
+    
+    <text x="15" y="93" class="field-text">🔗 SessionID</text>
+    <text x="210" y="93" class="field-type">VARCHAR (FK)</text>
+    
+    <text x="15" y="118" class="field-text">💬 StarterText</text>
+    <text x="210" y="118" class="field-type">TEXT</text>
+    
+    <text x="15" y="143" class="field-text">⚙️ ContextPromptUsed</text>
+    <text x="210" y="143" class="field-type">TEXT</text>
+  </g>
+
+  <!-- 4. LOG_ENTRY (Middle Left) -->
+  <g transform="translate(100, 370)" filter="url(#card-shadow)">
+    <rect width="270" height="180" class="card" rx="8" />
+    <!-- Header -->
+    <path d="M 1.5,8 A 6.5,6.5 0 0 1 8,1.5 L 262,1.5 A 6.5,6.5 0 0 1 268.5,8 L 268.5,45 L 1.5,45 Z" fill="url(#header-grad)" />
+    <text x="15" y="24" class="card-title">LOG_ENTRY</text>
+    <text x="15" y="38" class="card-subtitle">For System Auditing &amp; History</text>
+    <!-- Separator -->
+    <line x1="0" y1="45" x2="270" y2="45" stroke="#334155" stroke-width="1.5" />
+    <!-- Fields -->
+    <text x="15" y="68" class="field-text">🔑 LogID</text>
+    <text x="210" y="68" class="field-type">VARCHAR (PK)</text>
+    
+    <text x="15" y="93" class="field-text">🔗 SessionID</text>
+    <text x="210" y="93" class="field-type">VARCHAR (FK)</text>
+    
+    <text x="15" y="118" class="field-text">⚡ ActionType</text>
+    <text x="210" y="118" class="field-type">VARCHAR</text>
+    
+    <text x="15" y="143" class="field-text">📦 PayloadJSON</text>
+    <text x="210" y="143" class="field-type">JSON</text>
+    
+    <text x="15" y="168" class="field-text">⏰ Timestamp</text>
+    <text x="210" y="168" class="field-type">TIMESTAMP</text>
+  </g>
+
+  <!-- 5. NETWORKING_SESSION (Middle Center - Central Hub) -->
+  <g transform="translate(470, 370)" filter="url(#card-shadow)">
+    <rect width="270" height="160" class="card" rx="8" />
+    <!-- Header -->
+    <path d="M 1.5,8 A 6.5,6.5 0 0 1 8,1.5 L 262,1.5 A 6.5,6.5 0 0 1 268.5,8 L 268.5,45 L 1.5,45 Z" fill="url(#header-grad)" />
+    <text x="15" y="24" class="card-title">NETWORKING_SESSION</text>
+    <text x="15" y="38" class="card-subtitle">The Core Session Log</text>
+    <!-- Separator -->
+    <line x1="0" y1="45" x2="270" y2="45" stroke="#334155" stroke-width="1.5" />
+    <!-- Fields -->
+    <text x="15" y="68" class="field-text">🔑 SessionID</text>
+    <text x="210" y="68" class="field-type">VARCHAR (PK)</text>
+    
+    <text x="15" y="93" class="field-text">🔗 UserID</text>
+    <text x="210" y="93" class="field-type">VARCHAR (FK)</text>
+    
+    <text x="15" y="118" class="field-text">🔗 EventID</text>
+    <text x="210" y="118" class="field-type">VARCHAR (FK)</text>
+    
+    <text x="15" y="143" class="field-text">⏰ SessionTimestamp</text>
+    <text x="210" y="143" class="field-type">TIMESTAMP</text>
+  </g>
+
+  <!-- 6. WIKIPEDIA_FACT_CHECK (Middle Right) -->
+  <g transform="translate(840, 370)" filter="url(#card-shadow)">
+    <rect width="270" height="180" class="card" rx="8" />
+    <!-- Header -->
+    <path d="M 1.5,8 A 6.5,6.5 0 0 1 8,1.5 L 262,1.5 A 6.5,6.5 0 0 1 268.5,8 L 268.5,45 L 1.5,45 Z" fill="url(#header-grad)" />
+    <text x="15" y="24" class="card-title">WIKIPEDIA_FACT_CHECK</text>
+    <text x="15" y="38" class="card-subtitle">Supporting Entity for Fact Verification</text>
+    <!-- Separator -->
+    <line x1="0" y1="45" x2="270" y2="45" stroke="#334155" stroke-width="1.5" />
+    <!-- Fields -->
+    <text x="15" y="68" class="field-text">🔑 FactCheckID</text>
+    <text x="210" y="68" class="field-type">VARCHAR (PK)</text>
+    
+    <text x="15" y="93" class="field-text">🔗 SessionID</text>
+    <text x="210" y="93" class="field-type">VARCHAR (FK)</text>
+    
+    <text x="15" y="118" class="field-text">🔍 VerifiedQueryText</text>
+    <text x="210" y="118" class="field-type">TEXT</text>
+    
+    <text x="15" y="143" class="field-text">✅ VerificationStatus</text>
+    <text x="210" y="143" class="field-type">VARCHAR</text>
+    
+    <text x="15" y="168" class="field-text">🌐 WikipediaSourceURL</text>
+    <text x="210" y="168" class="field-type">VARCHAR</text>
+  </g>
+
+  <!-- ==================== RELATIONSHIPS ==================== -->
+
+  <!-- USER_PROFILE (1) to NETWORKING_SESSION (many) -->
+  <path d="M 235,260 L 235,315 L 520,315 L 520,370" class="relation-line" filter="url(#line-glow)" marker-start="url(#one-start)" marker-end="url(#many-end)" />
+  <text x="245" y="305" class="relation-label">1:m</text>
+
+  <!-- EVENT_CONTEXT (1) to NETWORKING_SESSION (many) -->
+  <path d="M 605,260 L 605,370" class="relation-line" filter="url(#line-glow)" marker-start="url(#one-start)" marker-end="url(#many-end)" />
+  <text x="615" y="315" class="relation-label">1:m</text>
+
+  <!-- NETWORKING_SESSION (1) to GENERATED_STARTER (many) -->
+  <path d="M 690,370 L 690,315 L 975,315 L 975,280" class="relation-line" filter="url(#line-glow)" marker-start="url(#one-start)" marker-end="url(#many-end)" />
+  <text x="945" y="305" class="relation-label">1:m</text>
+
+  <!-- NETWORKING_SESSION (1) to LOG_ENTRY (many) -->
+  <path d="M 470,450 L 370,450" class="relation-line" filter="url(#line-glow)" marker-start="url(#one-start)" marker-end="url(#many-end)" />
+  <text x="410" y="440" class="relation-label">1:m</text>
+
+  <!-- NETWORKING_SESSION (1) to WIKIPEDIA_FACT_CHECK (many) -->
+  <path d="M 740,450 L 840,450" class="relation-line" filter="url(#line-glow)" marker-start="url(#one-start)" marker-end="url(#many-end)" />
+  <text x="780" y="440" class="relation-label">1:m</text>
+
+  <!-- ==================== FOOTER SECTIONS ==================== -->
+
+  <!-- 1. Relationship Legend (Bottom Left) -->
+  <g transform="translate(100, 590)" filter="url(#card-shadow)">
+    <rect width="270" height="110" fill="url(#footer-box-grad)" stroke="#334155" stroke-width="1.5" rx="8" />
+    <text x="15" y="25" class="info-title">RELATIONSHIP LEGEND</text>
+    
+    <!-- One Ticks visual -->
+    <path d="M 25,50 L 65,50" stroke="#38BDF8" stroke-width="2" marker-start="url(#one-start)" />
+    <text x="80" y="54" class="info-text">1 : One (Parent Entity)</text>
+    
+    <!-- Many Fork visual -->
+    <path d="M 25,80 L 65,80" stroke="#38BDF8" stroke-width="2" marker-end="url(#many-end)" />
+    <text x="80" y="84" class="info-text">m : Many (Child Entity)</text>
+  </g>
+
+  <!-- 2. Data Persistence (Bottom Middle) -->
+  <g transform="translate(470, 590)" filter="url(#card-shadow)">
+    <rect width="270" height="110" fill="url(#footer-box-grad)" stroke="#334155" stroke-width="1.5" rx="8" />
+    <text x="15" y="25" class="info-title">DATA PERSISTENCE APPROACH</text>
+    <text x="15" y="50" class="info-text">File-based JSON storage tracking sessions,</text>
+    <text x="15" y="68" class="info-text">user history, and feedback. Scalable to standard</text>
+    <text x="15" y="86" class="info-text">relational database system (e.g., PostgreSQL).</text>
+  </g>
+
+  <!-- 3. Tech Stack (Bottom Right) -->
+  <g transform="translate(840, 590)" filter="url(#card-shadow)">
+    <rect width="270" height="110" fill="url(#footer-box-grad)" stroke="#334155" stroke-width="1.5" rx="8" />
+    <text x="15" y="25" class="info-title">TECHNOLOGY STACK</text>
+    <text x="15" y="50" class="info-text">⚡ FastAPI (Backend Service)</text>
+    <text x="15" y="68" class="info-text">🎈 Streamlit (Frontend Dashboard)</text>
+    <text x="15" y="86" class="info-text">🤖 DistilBERT / GPT-2 &amp; Wikipedia API</text>
+  </g>
+</svg>
